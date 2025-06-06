@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrant Minesweeper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              'reveal': 'reveal 0.3s ease-out',
+              'flag': 'flag 0.3s ease-in-out',
+              'modalShow': 'modalShow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+              'modalHide': 'modalHide 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards', // Added
+            },
+            keyframes: {
+              reveal: {
+                '0%': { transform: 'scale(0.5)', opacity: '0' },
+                '100%': { transform: 'scale(1)', opacity: '1' },
+              },
+              flag: {
+                '0%': { transform: 'scale(0.8) rotate(-10deg)' },
+                '50%': { transform: 'scale(1.1) rotate(10deg)' },
+                '100%': { transform: 'scale(1) rotate(0deg)' },
+              },
+              modalShow: {
+                '0%': { opacity: '0', transform: 'scale(0.9) translateY(20px)' },
+                '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+              },
+              modalHide: { // Added
+                '0%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+                '100%': { opacity: '0', transform: 'scale(0.9) translateY(20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-900">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>

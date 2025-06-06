@@ -1,0 +1,6 @@
+{
+  "name": "Vibrant Minesweeper",
+  "description": "A classic Minesweeper game with a vibrant, modern theme, built with React and Tailwind CSS. Challenge yourself with different difficulty levels!",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
