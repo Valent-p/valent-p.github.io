@@ -6,23 +6,23 @@
     <meta name="description" content="Portfolio of Valentino Phiri, a Software Developer and Game Programmer based in Malawi. Founder of Veigatec.">
     <title>Valentino Phiri | Software Developer Malawi</title>
     
-    <!-- JSON-LD SCHEMA: This tells Google you are a person, not a General -->
+    <!-- JSON-LD SCHEMA: This tells Google I am a person, ;) -->
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Valentino Phiri",
-      "jobTitle": "Software Developer",
-      "url": "https://valent-p.github.io",
-      "sameAs": [
-        "https://github.com/Valent-p",
-        "https://veigatec.rf.gd"
-      ],
-      "address": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Valentino Phiri",
+        "jobTitle": "Software Developer",
+        "url": "https://valent-p.github.io",
+        "sameAs": [
+            "https://github.com/Valent-p",
+            "https://veigatec.rf.gd"
+        ],
+        "address": {
         "@type": "PostalAddress",
         "addressCountry": "Malawi"
-      },
-      "disambiguatingDescription": "Software programmer and founder of Veigatec, distinct from General Paul Valentino Phiri."
+        },
+        "disambiguatingDescription": "Software programmer and founder of Veigatec, distinct from General Paul Valentino Phiri."
     }
     </script>
 
@@ -41,13 +41,42 @@
         footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
         a { color: #0366d6; text-decoration: none; }
         a:hover { text-decoration: underline; }
+
+        #profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .animated-background {
+            background: linear-gradient(-45deg, #381c13, #53152d, #104a5f, #0c4739);
+            background-size: 400% 400%; /* Makes the gradient 4x larger than container */
+            animation: gradient 15s ease infinite; /* Smooth, infinite animation */
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <header>
+    <header class="animated-background">
         <div class="container">
-            <img src="valentino-phiri-programmer.jpg" />
+            <img id="profile-picture" src="valentino-phiri-programmer.jpg" alt="A picture showing Valentino Phiri - Programmer"/>
             <h1>Valentino Phiri</h1>
             <p>Software Developer | Game Programmer | Founder of Veigatec</p>
             <a href="https://veigatec.rf.gd" class="btn">Visit My Company: Veigatec</a>
@@ -66,8 +95,9 @@
         <div class="section">
             <h2>Technical Skills</h2>
             <p><strong>Fluent:</strong> C#, Python, Java, PHP, C/C++</p>
-            <p><strong>Web:</strong> React, Laravel, HTML/CSS, JavaScript</p>
-            <p><strong>Game Dev:</strong> Unity, Pygame, Custom Engines</p>
+            <p><strong>Web:</strong> NextJS, FastAPI, React, Laravel, HTML/CSS, JavaScript/TypeScript</p>
+            <p><strong>Game Dev:</strong> Godot Engine, Unity, Pygame, Custom Engines</p>
+            <p><strong>AI/ML:</strong> Python, JavaScript (NodeJS)</p>
         </div>
 
         <!-- Links Section -->
@@ -76,14 +106,13 @@
             <ul>
                 <li><strong>GitHub:</strong> <a href="https://github.com/Valent-p">@Valent-p</a></li>
                 <li><strong>Portfolio Website:</strong> <a href="https://veigatec.rf.gd">Veigatec.rf.gd</a></li>
-                <!-- Add your LinkedIn below when you have the link -->
                 <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/valentino-phiri-74263237b/">Valentino Phiri</a></li>
             </ul>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Valentino Phiri. Hosted on GitHub Pages.</p>
+        <p>&copy; 2026 Valentino Phiri.</p>
         <p>Looking for the General? You are in the wrong place. This is the <strong>Developer</strong>.</p>
     </footer>
 
