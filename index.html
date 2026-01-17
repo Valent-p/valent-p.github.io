@@ -3,55 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibrant Minesweeper</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            animation: {
-              'reveal': 'reveal 0.3s ease-out',
-              'flag': 'flag 0.3s ease-in-out',
-              'modalShow': 'modalShow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
-              'modalHide': 'modalHide 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) forwards', // Added
-            },
-            keyframes: {
-              reveal: {
-                '0%': { transform: 'scale(0.5)', opacity: '0' },
-                '100%': { transform: 'scale(1)', opacity: '1' },
-              },
-              flag: {
-                '0%': { transform: 'scale(0.8) rotate(-10deg)' },
-                '50%': { transform: 'scale(1.1) rotate(10deg)' },
-                '100%': { transform: 'scale(1) rotate(0deg)' },
-              },
-              modalShow: {
-                '0%': { opacity: '0', transform: 'scale(0.9) translateY(20px)' },
-                '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
-              },
-              modalHide: { // Added
-                '0%': { opacity: '1', transform: 'scale(1) translateY(0)' },
-                '100%': { opacity: '0', transform: 'scale(0.9) translateY(20px)' },
-              }
-            }
-          }
-        }
-      }
+    <meta name="description" content="Portfolio of Valentino Phiri, a Software Developer and Game Programmer based in Malawi. Founder of Veigatec.">
+    <title>Valentino Phiri | Software Developer Malawi</title>
+    
+    <!-- JSON-LD SCHEMA: This tells Google you are a person, not a General -->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Valentino Phiri",
+      "jobTitle": "Software Developer",
+      "url": "https://valent-p.github.io",
+      "sameAs": [
+        "https://github.com/Valent-p",
+        "https://veigatec.rf.gd"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Malawi"
+      },
+      "disambiguatingDescription": "Software programmer and founder of Veigatec, distinct from General Paul Valentino Phiri."
+    }
     </script>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+
+    <style>
+        /* Simple, Clean, Fast CSS */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f4f9; }
+        header { background: #24292e; color: #fff; padding: 2rem 0; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { font-size: 1.2rem; color: #aaa; margin-top: 10px; }
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .btn { display: inline-block; background: #2ea44f; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold; }
+        .btn:hover { background: #2c974b; }
+        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #2ea44f; padding-bottom: 10px; margin-top: 0; }
+        ul { list-style-type: square; padding-left: 20px; }
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
+        a { color: #0366d6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
-<body class="bg-slate-900">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Valentino Phiri</h1>
+            <p>Software Developer | Game Programmer | Founder of Veigatec</p>
+            <a href="https://veigatec.rf.gd" class="btn">Visit My Company: Veigatec</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Hello! I am <strong>Valentino Phiri</strong>, a programmer based in <strong>Malawi</strong>. I specialize in building software systems, game engines, and full-stack web applications.</p>
+            <p>Currently studying at <strong>NACIT</strong>, I am passionate about C#, Python, and Low-level System Design. Unlike others who share my name, I command code, not armies.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <p><strong>Fluent:</strong> C#, Python, Java, PHP, C/C++</p>
+            <p><strong>Web:</strong> React, Laravel, HTML/CSS, JavaScript</p>
+            <p><strong>Game Dev:</strong> Unity, Pygame, Custom Engines</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="section">
+            <h2>Connect With Me</h2>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Valent-p">@Valent-p</a></li>
+                <li><strong>Portfolio Website:</strong> <a href="https://veigatec.rf.gd">Veigatec.rf.gd</a></li>
+                <!-- Add your LinkedIn below when you have the link -->
+                <li><strong>LinkedIn:</strong> <a href="#">Valentino Phiri</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Valentino Phiri. Hosted on GitHub Pages.</p>
+        <p>Looking for the General? You are in the wrong place. This is the <strong>Developer</strong>.</p>
+    </footer>
+
 </body>
 </html>
