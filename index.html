@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Valentino Phiri, a Software Developer and Game Programmer based in Malawi. Founder of Veigatec.">
-    <title>Valentino Phiri | Software Developer Malawi</title>
-    
-    <!-- JSON-LD SCHEMA: This tells Google I am a person, ;) -->
+    <meta name="description"
+        content="Portfolio of Valentino Phiri, a Software Developer and Game Programmer based in Malawi. Founder of Veigatec.">
+    <title>Valentino Phiri | Software Developer & Game Programmer</title>
+
+    <!-- JSON-LD SCHEMA -->
     <script type="application/ld+json">
     {
         "@context": "http://schema.org",
@@ -16,70 +18,283 @@
         "url": "https://valent-p.github.io",
         "sameAs": [
             "https://github.com/Valent-p",
-            "https://veigatec.rf.gd"
+            "https://veigatec.rf.gd",
+            "https://www.linkedin.com/in/valentino-phiri-74263237b/"
         ],
         "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "Malawi"
+            "@type": "PostalAddress",
+            "addressCountry": "Malawi"
         },
         "disambiguatingDescription": "Software programmer and founder of Veigatec, distinct from General Paul Valentino Phiri."
     }
     </script>
 
     <style>
-        /* Simple, Clean, Fast CSS */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f4f9; }
-        header { background: #24292e; color: #fff; padding: 2rem 0; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        header p { font-size: 1.2rem; color: #aaa; margin-top: 10px; }
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        .btn { display: inline-block; background: #2ea44f; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold; }
-        .btn:hover { background: #2c974b; }
-        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid #2ea44f; padding-bottom: 10px; margin-top: 0; }
-        ul { list-style-type: square; padding-left: 20px; }
-        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9rem; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        :root {
+            --primary: #2ea44f;
+            --primary-dark: #22863a;
+            --accent: #0366d6;
+            --bg: #f6f8fa;
+            --card-bg: #ffffff;
+            --text-main: #24292e;
+            --text-secondary: #586069;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* Core Structure */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            overflow-x: hidden;
+        }
+
+        /* Header / Hero Section */
+        header {
+            position: relative;
+            background: #0d1117;
+            color: #fff;
+            padding: 4rem 0 6rem;
+            text-align: center;
+            overflow: hidden;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        /* The Canvas sits behind the text */
+        #hero-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.6;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            /* Keeps text above canvas */
+        }
 
         #profile-picture {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            margin: 0 auto;
+            border: 4px solid var(--primary);
+            margin: 0 auto 20px;
             display: block;
             object-fit: cover;
+            box-shadow: 0 0 20px rgba(46, 164, 79, 0.5);
+            transition: var(--transition);
         }
 
-        .animated-background {
-            background: linear-gradient(-45deg, #381c13, #53152d, #104a5f, #0c4739);
-            background-size: 400% 400%; /* Makes the gradient 4x larger than container */
-            animation: gradient 15s ease infinite; /* Smooth, infinite animation */
-            color: white;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        #profile-picture:hover {
+            transform: scale(1.05) rotate(3deg);
+            border-color: #fff;
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Typewriter Cursor */
+        .typewriter-text {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3rem;
+            color: #8b949e;
+            min-height: 1.6em;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            background-color: var(--primary);
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
             100% {
-                background-position: 0% 50%;
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-top: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(46, 164, 79, 0.3);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .btn:hover {
+            background: transparent;
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(46, 164, 79, 0.4);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 900px;
+            margin: -40px auto 0;
+            /* Pull up into the header slightly */
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Cards */
+        .section {
+            background: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            /* Hidden for animation */
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--text-main);
+            border-bottom: 2px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        /* Skills Badges */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            background: #f1f8ff;
+            color: var(--accent);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid rgba(3, 102, 214, 0.2);
+            transition: var(--transition);
+            cursor: default;
+        }
+
+        .skill-tag:hover {
+            background: var(--accent);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: var(--text-secondary);
+        }
+
+        /* Link List */
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .link-list li {
+            margin-bottom: 12px;
+        }
+
+        .link-list a {
+            color: var(--text-main);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: var(--transition);
+        }
+
+        .link-list a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .icon {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            background: #fff;
+            border-top: 1px solid #eee;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            header {
+                padding-bottom: 4rem;
+                clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
             }
         }
     </style>
 </head>
+
 <body>
 
-    <header class="animated-background">
-        <div class="container">
-            <img id="profile-picture" src="valentino-phiri-programmer.jpg" alt="A picture showing Valentino Phiri - Programmer"/>
-            <h1>Valentino Phiri</h1>
-            <p>Software Developer | Game Programmer | Founder of Veigatec</p>
-            <a href="https://veigatec.rf.gd" class="btn">Visit My Company: Veigatec</a>
+    <header>
+        <canvas id="hero-canvas"></canvas>
+        <div class="header-content">
+            <div class="container" style="margin-top: 0;">
+                <img id="profile-picture" src="valentino-phiri-programmer.jpg" alt="Valentino Phiri"
+                    onerror="this.src='https://ui-avatars.com/api/?name=Valentino+Phiri&background=2ea44f&color=fff&size=200'" />
+                <h1>Valentino Phiri</h1>
+                <span class="typewriter-text"><span id="type-target"></span><span class="cursor">&nbsp;</span></span>
+                <a href="https://veigatec.rf.gd" class="btn">Visit Veigatec</a>
+            </div>
         </div>
     </header>
 
@@ -87,34 +302,224 @@
         <!-- About Section -->
         <div class="section">
             <h2>About Me</h2>
-            <p>Hello! I am <strong>Valentino Phiri</strong>, a programmer based in <strong>Malawi</strong>. I specialize in building software systems, game engines, and full-stack web applications.</p>
-            <p>Currently studying at <strong>NACIT</strong>, I am passionate about C#, Python, and Low-level System Design. Unlike others who share my name, I command code, not armies.</p>
+            <p>Hello! I am <strong>Valentino Phiri</strong>, a passionate developer based in <strong>Malawi</strong>. I
+                bridge the gap between High-Level Web Applications and Low-Level System Design.</p>
+            <p>Founder of <a href="https://veigatec.rf.gd" style="color:var(--primary); font-weight:bold;">Veigatec</a>
+                and currently studying at <strong>NACIT</strong>. Whether it's optimizing memory management in C++ or
+                deploying scalable APIs with Python, I write code that performs.</p>
+            <p style="font-size: 0.9em; color: #888; margin-top: 10px;"><em>"I command code, not armies."</em> (Yes,
+                that's a note for the people looking for the General).</p>
         </div>
 
         <!-- Skills Section -->
         <div class="section">
-            <h2>Technical Skills</h2>
-            <p><strong>Fluent:</strong> C#, Python, Java, PHP, C/C++</p>
-            <p><strong>Web:</strong> NextJS, FastAPI, React, Laravel, HTML/CSS, JavaScript/TypeScript</p>
-            <p><strong>Game Dev:</strong> Godot Engine, Unity, Pygame, Custom Engines</p>
-            <p><strong>AI/ML:</strong> Python, JavaScript (NodeJS)</p>
+            <h2>Technical Arsenal</h2>
+
+            <div class="skill-category">Fluent Languages</div>
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">C# (C-Sharp)</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Go (Golang)</span>
+                <span class="skill-tag">Rust</span>
+                <span class="skill-tag">Swift</span>
+                <span class="skill-tag">HTML/CSS</span>
+            </div>
+
+            <div class="skill-category" style="margin-top: 15px;">Web Technologies</div>
+            <div class="skills-grid">
+                <span class="skill-tag">NextJS</span>
+                <span class="skill-tag">FastAPI</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">Wordpress</span>
+                <span class="skill-tag">Joomla</span>
+            </div>
+
+            <div class="skill-category" style="margin-top: 15px;">Game Development</div>
+            <div class="skills-grid">
+                <span class="skill-tag">Godot Engine</span>
+                <span class="skill-tag">GameMaker Studio</span>
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Pygame</span>
+                <span class="skill-tag">OpenGL</span>
+            </div>
         </div>
 
         <!-- Links Section -->
         <div class="section">
-            <h2>Connect With Me</h2>
-            <ul>
-                <li><strong>GitHub:</strong> <a href="https://github.com/Valent-p">@Valent-p</a></li>
-                <li><strong>Portfolio Website:</strong> <a href="https://veigatec.rf.gd">Veigatec.rf.gd</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/valentino-phiri-74263237b/">Valentino Phiri</a></li>
+            <h2>Connect</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://github.com/Valent-p">
+                        <span class="icon">💻</span> @Valent-p (GitHub)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://veigatec.rf.gd">
+                        <span class="icon">🚀</span> Veigatec.rf.gd (Company)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/valentino-phiri-74263237b/">
+                        <span class="icon">💼</span> Valentino Phiri (LinkedIn)
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Valentino Phiri.</p>
-        <p>Looking for the General? You are in the wrong place. This is the <strong>Developer</strong>.</p>
+        <p>&copy; 2026 Valentino Phiri. Hand-crafted with ❤️ by vanilla HTML/CSS/JS.</p>
+        <p>Malawi 🇲🇼</p>
     </footer>
 
+    <script>
+        /**
+         * 1. TYPEWRITER EFFECT
+         * Animates the job titles in the header
+         */
+        const texts = ["Software Developer", "Game Programmer", "Founder of Veigatec", "Low-Level Enthusiast"];
+        let count = 0;
+        let index = 0;
+        let currentText = "";
+        let letter = "";
+
+        (function type() {
+            if (count === texts.length) { count = 0; }
+            currentText = texts[count];
+            letter = currentText.slice(0, ++index);
+
+            document.getElementById('type-target').textContent = letter;
+
+            if (letter.length === currentText.length) {
+                setTimeout(() => {
+                    // Backspace effect could go here, but simple cycle is cleaner for SEO/Performance ;)
+                    count++;
+                    index = 0;
+                    // Pause before next word
+                    setTimeout(type, 2000);
+                }, 100);
+            } else {
+                setTimeout(type, 100);
+            }
+        }());
+
+        /**
+         * 2. SCROLL REVEAL ANIMATION
+         * Uses IntersectionObserver for high performance
+         */
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.section').forEach((el) => observer.observe(el));
+
+        /**
+         * 3. CANVAS PARTICLE NETWORK
+         * A lightweight interactive background for the header
+         */
+        const canvas = document.getElementById("hero-canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let particlesArray;
+
+        // Create particle
+        class Particle {
+            constructor(x, y, directionX, directionY, size, color) {
+                this.x = x;
+                this.y = y;
+                this.directionX = directionX;
+                this.directionY = directionY;
+                this.size = size;
+                this.color = color;
+            }
+            // Method to draw individual particle
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+                ctx.fillStyle = '#2ea44f'; // Primary color
+                ctx.fill();
+            }
+            // Check particle position, check mouse position, move the particle, draw the particle
+            update() {
+                if (this.x > canvas.width || this.x < 0) { this.directionX = -this.directionX; }
+                if (this.y > canvas.height || this.y < 0) { this.directionY = -this.directionY; }
+                this.x += this.directionX;
+                this.y += this.directionY;
+                this.draw();
+            }
+        }
+
+        function init() {
+            particlesArray = [];
+            let numberOfParticles = (canvas.height * canvas.width) / 9000; // Density
+            for (let i = 0; i < numberOfParticles; i++) {
+                let size = (Math.random() * 2) + 1;
+                let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size * 2);
+                let y = (Math.random() * ((innerHeight - size * 2) - (size * 2)) + size * 2);
+                let directionX = (Math.random() * 0.4) - 0.2; // Slow speed
+                let directionY = (Math.random() * 0.4) - 0.2;
+                let color = '#2ea44f';
+
+                particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+            }
+        }
+
+        // Animation Loop
+        function animate() {
+            requestAnimationFrame(animate);
+            ctx.clearRect(0, 0, innerWidth, innerHeight);
+
+            for (let i = 0; i < particlesArray.length; i++) {
+                particlesArray[i].update();
+            }
+            connect();
+        }
+
+        // Draw lines between close particles
+        function connect() {
+            let opacityValue = 1;
+            for (let a = 0; a < particlesArray.length; a++) {
+                for (let b = a; b < particlesArray.length; b++) {
+                    let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x))
+                        + ((particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
+
+                    if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+                        opacityValue = 1 - (distance / 20000);
+                        ctx.strokeStyle = 'rgba(46, 164, 79,' + opacityValue + ')';
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+                        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        // Handle Window Resize
+        window.addEventListener('resize', function () {
+            canvas.width = innerWidth;
+            canvas.height = innerHeight;
+            init();
+        });
+
+        init();
+        animate();
+    </script>
 </body>
+
 </html>
