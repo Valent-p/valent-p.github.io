@@ -25,6 +25,8 @@ export default function About() {
         "Laravel",
         "Tailwind CSS",
         "Node.js",
+        "Wordpress",
+        "Joomla",
       ],
       games: ["Godot Engine", "Unity", "GameMaker Studio", "Pygame", "OpenGL"],
     },

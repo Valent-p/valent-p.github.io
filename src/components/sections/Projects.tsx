@@ -2,25 +2,26 @@ import ProjectCard from "../ui/ProjectCard";
 
 const projects = [
   {
-    title: "Veigatec Dashboard",
+    title: "GitCard",
     description:
-      "A comprehensive cloud management platform for business automation and data visualization.",
+      "GitCard is a sleek, interactive web application that generates a beautiful, shareable card summarizing your GitHub profile. It's built with modern web technologies and features fluid animations to present your stats in an engaging way ;)",
     tags: ["React", "FastAPI", "PostgreSQL", "Cloud"],
-    devlog: "https://veigatec.rf.gd",
-    source: "https://github.com/Valent-p",
+    devlog: "https://veigatec.rf.gd/project/gitcard",
+    source: "https://github.com/Valent-p/gitcard",
     image:
-      "https://images.unsplash.com/photo-1551288049-bbbda536ad8a?auto=format&fit=crop&q=80&w=800",
+      "https://github.com/Valent-p/gitcard/blob/master/docs/gitcard-logo.png?raw=true",
   },
   {
-    title: "Stellar Drift",
+    title: "Simple Snake Game",
     description:
-      "A high-octane 2D space exploration and combat game built with a custom physics engine.",
-    tags: ["Godot", "GDScript", "C#", "Game Dev"],
+      "This project is a classic Snake game built from scratch using only HTML, CSS, and vanilla JavaScript. It is designed for educational purposes to help beginners understand the fundamental concepts of 2D game development in a web browser.",
+    tags: ["Game Dev", "Javascript", "HTML", "CSS"],
     devlog: "#",
-    source: "https://github.com/Valent-p",
+    source: "https://github.com/Valent-p/ClassicSnakeTutorial",
     image:
-      "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=800",
+      "https://github.com/Valent-p/ClassicSnakeTutorial/blob/main/screenshots/start.jpg?raw=true",
   },
+  /*
   {
     title: "System Guard CLI",
     description:
@@ -30,7 +31,7 @@ const projects = [
     source: "#",
     image:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800",
-  },
+  },*/
 ];
 
 export default function Projects() {
