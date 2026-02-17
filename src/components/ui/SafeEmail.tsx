@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Mail } from "lucide-react";
 
 export default function SafeEmail() {
   const [email, setEmail] = useState("");
@@ -10,7 +9,12 @@ export default function SafeEmail() {
     // Reconstruct email address on the client side to evade simple bots
     const user = "valent.phiri";
     const domain = "gmail.com";
-    setEmail(`${user}@${domain}`);
+
+    const timeout = setTimeout(() => {
+      setEmail(`${user}@${domain}`);
+    }, 100);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   if (!email) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, Github, Code2, BookOpen } from "lucide-react";
+import { Github, Code2, BookOpen } from "lucide-react";
 import Image from "next/image";
 
 interface ProjectCardProps {

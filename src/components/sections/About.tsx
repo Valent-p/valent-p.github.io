@@ -41,7 +41,7 @@ export default function About() {
             {profile.bio}
           </p>
           <p className="text-xl font-display font-semibold text-primary italic">
-            "{profile.quote}"
+            &quot;{profile.quote}&quot;
           </p>
         </div>
 

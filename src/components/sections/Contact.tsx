@@ -11,7 +11,7 @@ export default function Contact() {
           Get In <span>Touch</span>
         </h2>
         <p className="text-slate-400 text-lg mb-12">
-          I'm always open to discussing new projects, creative ideas or
+          I&apos;m always open to discussing new projects, creative ideas or
           opportunities to be part of your visions.
         </p>
 
@@ -34,7 +34,7 @@ export default function Contact() {
               <MessageSquare size={24} />
             </div>
             <div>
-              <h4 className="text-xl font-bold mb-1">Let's Connect</h4>
+              <h4 className="text-xl font-bold mb-1">Let&apos;s Connect</h4>
               <p className="text-slate-400 mb-4">
                 Find me on professional networks.
               </p>
