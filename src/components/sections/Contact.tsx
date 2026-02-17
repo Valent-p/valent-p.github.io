@@ -1,6 +1,7 @@
 "use client";
 
 import { Mail, MessageSquare, Send } from "lucide-react";
+import SafeEmail from "../ui/SafeEmail";
 
 export default function Contact() {
   return (
@@ -22,14 +23,9 @@ export default function Contact() {
             <div>
               <h4 className="text-xl font-bold mb-1">Email Me</h4>
               <p className="text-slate-400 mb-4">
-                Feel free to drop me a message anytime.
+                Direct safe communication link for inquiries.
               </p>
-              <a
-                href="mailto:contact@veigatec.rf.gd"
-                className="text-primary font-semibold hover:underline"
-              >
-                contact@veigatec.rf.gd
-              </a>
+              <SafeEmail />
             </div>
           </div>
 
@@ -64,8 +60,9 @@ export default function Contact() {
         </div>
 
         <div className="mt-16">
+          {/* Note: In a real environment, this might also use the safe email hook if it was a button action */}
           <a
-            href="mailto:contact@veigatec.rf.gd"
+            href="mailto:valent.phiri@gmail.com"
             className="btn btn-primary px-12 py-4 text-lg"
           >
             Say Hello <Send size={20} />
