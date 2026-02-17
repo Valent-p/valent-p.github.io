@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Valentino Phiri - Portfolio
+
+This is a portfolio website for Valentino Phiri the programmer.
+It includes my projects, skills, and contact information.
 
 ## Getting Started
 
