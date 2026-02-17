@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #10b981;
+  --primary-glow: rgba(16, 185, 129, 0.3);
+  --bg-dark: #020617;
+  --bg-surface: #0f172a;
+  --bg-surface-light: #1e293b;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-bg-dark: var(--bg-dark);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-surface-light: var(--bg-surface-light);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
+  --animate-spin-slow: spin 3s linear infinite;
+}
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+
+  body {
+    @apply bg-bg-dark text-slate-50 antialiased;
+    background: radial-gradient(circle at top right, #1e1b4b, transparent),
+      radial-gradient(circle at bottom left, #064e3b, transparent),
+      var(--bg-dark);
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-slate-900 hover:-translate-y-0.5;
+
+    &:hover {
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+  }
+
+  .btn-outline {
+    @apply bg-white/5 border border-white/10 hover:border-primary hover:bg-primary/10;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-extrabold text-center mb-16;
+  }
+
+  .section-title span {
+    @apply text-primary;
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+  @apply text-primary;
+  animation: blink 1s infinite;
+}

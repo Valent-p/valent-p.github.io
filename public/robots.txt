@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valent-p.github.io/sitemap.xml
