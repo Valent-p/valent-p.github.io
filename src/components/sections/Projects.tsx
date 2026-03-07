@@ -21,17 +21,24 @@ const projects = [
     image:
       "https://github.com/Valent-p/ClassicSnakeTutorial/blob/main/screenshots/start.jpg?raw=true",
   },
-  /*
   {
-    title: "System Guard CLI",
+    title: "SubOrbit",
     description:
-      "A low-level system monitoring tool designed for performance optimization and threat detection.",
-    tags: ["C++", "Systems", "Linux", "Optimization"],
+      "A simple and powerful subscription management system. You can use it to track your expenses like on Netflix, Spotify, etc. It is built with modern web technologies and features fluid animations to present your stats in an engaging way ;)",
+    tags: [
+      "Next.js",
+      "Zod",
+      "Zustand",
+      "Tailwind CSS",
+      "Lucide React",
+      "React Hook Form",
+      "Recharts",
+    ],
     devlog: "#",
-    source: "#",
+    //source: "https://github.com/Valent-p/suborbit",
     image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=800",
-  },*/
+      "https://github.com/Valent-p/suborbit/blob/main/docs/suborbit-overview.png?raw=true",
+  },
 ];
 
 export default function Projects() {
