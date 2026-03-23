@@ -2,14 +2,24 @@ import ProjectCard from "../ui/ProjectCard";
 
 const projects = [
   {
+    title: "Love-as-a-Service (LaaS)",
+    description:
+      "A high-performance REST API for emotional support. Inspired by 'no-as-a-service', this project provides randomized affirmations and developer-friendly affection. Built with a focus on speed and security, utilizing Edge Runtime for global resilience.",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Edge Runtime", "API"],
+    devlog: "#",
+    source: "https://github.com/Valent-p/love-as-a-service",
+    tryit: "https://love-as-a-service.vercel.app/",
+    image: "/images/laas-v1.0-screenshot.png",
+  },
+  {
     title: "GitCard",
     description:
       "GitCard is a sleek, interactive web application that generates a beautiful, shareable card summarizing your GitHub profile. It's built with modern web technologies and features fluid animations to present your stats in an engaging way ;)",
     tags: ["React", "FastAPI", "PostgreSQL", "Cloud"],
     devlog: "https://veigatec.rf.gd/project/gitcard",
     source: "https://github.com/Valent-p/gitcard",
-    image:
-      "https://github.com/Valent-p/gitcard/blob/master/docs/gitcard-logo.png?raw=true",
+    tryit: "https://gitcard-valentp.vercel.app/",
+    image: "/images/gitcard-logo.png",
   },
   {
     title: "Simple Snake Game",
@@ -36,8 +46,8 @@ const projects = [
     ],
     devlog: "#",
     //source: "https://github.com/Valent-p/suborbit",
-    image:
-      "https://github.com/Valent-p/suborbit/blob/main/docs/suborbit-overview.png?raw=true",
+    tryit: "https://suborbit.vercel.app/",
+    image: "/images/suborbit-overview.png",
   },
 ];
 

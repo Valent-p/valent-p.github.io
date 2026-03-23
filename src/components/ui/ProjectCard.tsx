@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Code2, BookOpen } from "lucide-react";
+import { Github, Code2, BookOpen, ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 interface ProjectCardProps {
@@ -9,6 +9,7 @@ interface ProjectCardProps {
   tags: string[];
   devlog?: string;
   source?: string;
+  tryit?: string;
   image?: string;
 }
 
@@ -18,6 +19,7 @@ export default function ProjectCard({
   tags,
   devlog,
   source,
+  tryit,
   image,
 }: ProjectCardProps) {
   return (
@@ -77,7 +79,17 @@ export default function ProjectCard({
               <Github size={16} /> Source
             </a>
           )}
-          {!devlog && !source && (
+          {tryit && (
+            <a
+              href={tryit}
+              className="flex items-center gap-2 text-sm font-bold text-slate-300 hover:text-primary transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <ExternalLink size={16} /> Try It
+            </a>
+          )}
+          {!devlog && !source && !tryit && (
             <span className="text-xs text-slate-500 italic">
               Links coming soon
             </span>
