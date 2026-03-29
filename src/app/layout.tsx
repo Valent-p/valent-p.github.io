@@ -25,6 +25,10 @@ export const metadata: Metadata = {
     "Veigatec",
   ],
   authors: [{ name: "Valentino Phiri" }],
+  icons: {
+    icon: "/icon.jpg",
+    apple: "/icon.jpg",
+  },
   openGraph: {
     title: "Valentino Phiri | Software Developer & Game Programmer",
     description:

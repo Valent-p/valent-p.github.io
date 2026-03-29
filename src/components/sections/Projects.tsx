@@ -4,9 +4,10 @@ const projects = [
   {
     title: "Love-as-a-Service (LaaS)",
     description:
-      "A high-performance REST API for emotional support. Inspired by 'no-as-a-service', this project provides randomized affirmations and developer-friendly affection. Built with a focus on speed and security, utilizing Edge Runtime for global resilience.",
+      "A high-performance REST API for affirmations. Launched as a counter-culture project to 'no-as-a-service', it went viral on LinkedIn with 13,000+ impressions in its first week. Built with Next.js Edge Runtime for global scalability and DDoS resilience.",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion", "Edge Runtime", "API"],
-    devlog: "#",
+    devlog:
+      "https://www.linkedin.com/posts/valentino-phiri-74263237b_nextjs-vercel-webdevelopment-share-7441276665172750336-kopq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF3jPKIBXhL9i5pYIWTxED230Q9L7tCOgz0",
     source: "https://github.com/Valent-p/love-as-a-service",
     tryit: "https://love-as-a-service.vercel.app/",
     image: "/images/laas-v1.0-screenshot.png",
