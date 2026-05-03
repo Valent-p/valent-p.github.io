@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import ProjectCard from "../ui/ProjectCard";
+import projectStats from "@/data/projectStats.json";
 
 const projects = [
   {
@@ -8,6 +12,7 @@ const projects = [
     tags: ["React", "TypeScript", "Tailwind CSS", "Zustand", "FFmpeg.wasm", "WebAssembly"],
     tryit: "https://wasm-convertify.vercel.app",
     image: "/images/wasm-convertify.png",
+    featured: true,
   },
   {
     title: "Love-as-a-Service (LaaS)",
@@ -19,6 +24,7 @@ const projects = [
     source: "https://github.com/Valent-p/love-as-a-service",
     tryit: "https://love-as-a-service.vercel.app/",
     image: "/images/laas-v1.0-screenshot.png",
+    featured: true,
   },
   {
     title: "GitCard",
@@ -29,6 +35,7 @@ const projects = [
     source: "https://github.com/Valent-p/gitcard",
     tryit: "https://gitcard-valentp.vercel.app/",
     image: "/images/gitcard-logo.png",
+    featured: true,
   },
   {
     title: "Simple Snake Game",
@@ -39,6 +46,7 @@ const projects = [
     source: "https://github.com/Valent-p/ClassicSnakeTutorial",
     image:
       "https://github.com/Valent-p/ClassicSnakeTutorial/blob/main/screenshots/start.jpg?raw=true",
+    featured: false,
   },
   {
     title: "SubOrbit",
@@ -57,19 +65,66 @@ const projects = [
     //source: "https://github.com/Valent-p/suborbit",
     tryit: "https://suborbit.vercel.app/",
     image: "/images/suborbit-overview.png",
+    featured: false,
   },
 ];
 
 export default function Projects() {
+  const [selectedTech, setSelectedTech] = useState<string | null>(null);
+
+  // Get all unique technologies
+  const allTechs = Array.from(new Set(projects.flatMap((p) => p.tags))).sort();
+
+  // Filter projects
+  const filteredProjects = selectedTech
+    ? projects.filter((p) => p.tags.includes(selectedTech))
+    : projects;
+
   return (
     <section id="projects" className="py-24 container mx-auto px-8">
-      <h2 className="section-title">
+      <h2 className="section-title mb-12">
         Featured <span>Projects</span>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((p, i) => (
-          <ProjectCard key={i} {...p} />
+
+      {/* Filter by Technology */}
+      <div className="mb-12">
+        <button
+          onClick={() => setSelectedTech(null)}
+          className={`px-4 py-2 rounded-lg font-semibold transition-all mr-2 mb-2 ${
+            selectedTech === null
+              ? "bg-primary text-slate-900"
+              : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+          }`}
+        >
+          All
+        </button>
+        {allTechs.map((tech) => (
+          <button
+            key={tech}
+            onClick={() => setSelectedTech(tech)}
+            className={`px-4 py-2 rounded-lg font-semibold transition-all mr-2 mb-2 ${
+              selectedTech === tech
+                ? "bg-primary text-slate-900"
+                : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+            }`}
+          >
+            {tech}
+          </button>
         ))}
+      </div>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredProjects.map((p, i) => {
+          const stats = projectStats[p.title as keyof typeof projectStats];
+          return (
+            <ProjectCard 
+              key={i} 
+              {...p} 
+              stats={stats}
+            />
+          );
+        })}
       </div>
     </section>
   );

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "author": "Client Name",
+    "role": "Project Manager at TechCorp",
+    "company": "TechCorp",
+    "testimonial": "Valentino delivered an exceptional full-stack solution ahead of schedule. His attention to detail and performance optimization were outstanding.",
+    "image": null,
+    "link": "https://linkedin.com/in/example",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "author": "Developer Partner",
+    "role": "Senior Developer",
+    "company": "Veigatec",
+    "testimonial": "Working with Valentino has been incredible. His ability to bridge high-level design with low-level optimization is rare and invaluable.",
+    "image": null,
+    "link": null,
+    "featured": true
+  },
+  {
+    "id": 3,
+    "author": "Open Source User",
+    "role": "Developer",
+    "company": "Community",
+    "testimonial": "Love-as-a-Service inspired me to build my own viral project. The code quality and documentation were perfect references.",
+    "image": null,
+    "link": null,
+    "featured": false
+  }
+]

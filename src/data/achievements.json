@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Viral Developer",
+    "description": "Love-as-a-Service reached 13,000+ impressions in the first week",
+    "icon": "🚀",
+    "date": "2026-02-15",
+    "category": "milestone"
+  },
+  {
+    "id": 2,
+    "title": "Full-Stack Mastery",
+    "description": "Proficient across entire development stack from frontend to DevOps",
+    "icon": "⚡",
+    "date": "2026-01-01",
+    "category": "skill"
+  },
+  {
+    "id": 3,
+    "title": "Open Source Contributor",
+    "description": "Active contributor to multiple open-source projects and maintainer of educational resources",
+    "icon": "🔧",
+    "date": "2025-06-01",
+    "category": "community"
+  },
+  {
+    "id": 4,
+    "title": "Game Developer",
+    "description": "Multi-engine game development experience (Godot, Unity, GameMaker)",
+    "icon": "🎮",
+    "date": "2025-01-01",
+    "category": "skill"
+  },
+  {
+    "id": 5,
+    "title": "Performance Optimizer",
+    "description": "Specialized in system design and low-level optimization",
+    "icon": "🔥",
+    "date": "2026-01-15",
+    "category": "skill"
+  },
+  {
+    "id": 6,
+    "title": "WebAssembly Pioneer",
+    "description": "Built production applications leveraging WebAssembly for privacy and performance",
+    "icon": "🌐",
+    "date": "2026-04-10",
+    "category": "skill"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "type": "experience",
+    "role": "Founder & Lead Developer",
+    "company": "Veigatec",
+    "startDate": "2023",
+    "endDate": "Present",
+    "description": "Building innovative web and software solutions. Developing full-stack applications and leading a team of developers.",
+    "highlights": [
+      "Built 5+ production applications",
+      "13K+ impressions on viral projects",
+      "Full-stack development (Frontend, Backend, DevOps)"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "education",
+    "role": "Student",
+    "company": "NACIT - Malawi",
+    "startDate": "2024",
+    "endDate": "Present",
+    "description": "Pursuing advanced studies in computer science and software engineering.",
+    "highlights": [
+      "Advanced algorithms and data structures",
+      "System design and architecture",
+      "Software engineering best practices"
+    ]
+  },
+  {
+    "id": 3,
+    "type": "experience",
+    "role": "Freelance Developer",
+    "company": "Self-employed",
+    "startDate": "2021",
+    "endDate": "2023",
+    "description": "Developed custom web solutions and applications for various clients. Specialized in full-stack development with modern frameworks.",
+    "highlights": [
+      "WordPress & Joomla sites",
+      "React & Next.js applications",
+      "FastAPI backend services"
+    ]
+  }
+]

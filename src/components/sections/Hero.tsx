@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, Github, Download } from "lucide-react";
 import Typewriter from "../ui/Typewriter";
 import ParticleCanvas from "../ui/ParticleCanvas";
+import resumeData from "@/data/resume.json";
 
 export default function Hero() {
   const titles = [
@@ -55,6 +56,15 @@ export default function Hero() {
           >
             <Github size={20} /> GitHub
           </a>
+          {resumeData.downloadUrl && (
+            <a
+              href={resumeData.downloadUrl}
+              target="_blank"
+              className="btn btn-outline"
+            >
+              <Download size={20} /> Resume
+            </a>
+          )}
         </div>
       </div>
     </section>

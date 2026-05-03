@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "Building a Viral REST API: The Story Behind Love-as-a-Service",
+    "excerpt": "How I built a viral API project that reached 13,000+ impressions in its first week using Next.js Edge Runtime.",
+    "content": "In this deep dive, I'll walk you through the journey of creating Love-as-a-Service, from ideation to going viral on LinkedIn...",
+    "category": "Web Development",
+    "tags": ["Next.js", "Edge Runtime", "API Design", "Viral Marketing"],
+    "date": "2026-04-15",
+    "readTime": 8,
+    "image": "/images/laas-v1.0-screenshot.png",
+    "url": "https://www.linkedin.com/posts/valentino-phiri-74263237b_nextjs-vercel-webdevelopment-share-7441276665172750336-kopq",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "WebAssembly & Privacy: Building WASM Convertify",
+    "excerpt": "Explore how WebAssembly enables privacy-first file conversion directly in the browser using FFmpeg.wasm.",
+    "content": "Privacy is a fundamental right. In this article, I share how I built WASM Convertify to keep user data completely private...",
+    "category": "WebAssembly",
+    "tags": ["WebAssembly", "Privacy", "FFmpeg.wasm", "React"],
+    "date": "2026-04-10",
+    "readTime": 10,
+    "image": "/images/wasm-convertify.png",
+    "url": "https://your-blog-url.com/wasm-convertify",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "From Zero to Hero: Building GitCard",
+    "excerpt": "A technical breakdown of how I built GitCard, a full-stack application combining React, FastAPI, and PostgreSQL.",
+    "content": "GitCard started as a simple idea: what if GitHub profiles could look even better? Here's how I made it happen...",
+    "category": "Full-Stack Development",
+    "tags": ["React", "FastAPI", "PostgreSQL", "Design"],
+    "date": "2026-03-28",
+    "readTime": 12,
+    "image": "/images/gitcard-logo.png",
+    "url": "https://veigatec.rf.gd/project/gitcard",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Game Development with Godot Engine: Lessons Learned",
+    "excerpt": "My experience building games with Godot Engine and the key lessons I've learned along the way.",
+    "content": "Game development teaches you a lot about optimization, state management, and user experience. Here's what I learned...",
+    "category": "Game Development",
+    "tags": ["Godot Engine", "Game Dev", "Performance"],
+    "date": "2026-03-15",
+    "readTime": 9,
+    "image": null,
+    "url": "https://your-blog-url.com/godot-lessons",
+    "featured": false
+  }
+]

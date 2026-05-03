@@ -1,0 +1,59 @@
+{
+  "WASM Convertify": {
+    "github_stars": 0,
+    "github_forks": 0,
+    "live_users": 1200,
+    "monthly_visitors": 3500,
+    "uptime": 99.9,
+    "average_rating": 4.8,
+    "reviews_count": 45,
+    "build_time_days": 21,
+    "downloads": 5000,
+    "featured": true
+  },
+  "Love-as-a-Service (LaaS)": {
+    "github_stars": 234,
+    "github_forks": 89,
+    "live_users": 8900,
+    "monthly_visitors": 25000,
+    "uptime": 99.95,
+    "average_rating": 4.9,
+    "reviews_count": 156,
+    "build_time_days": 14,
+    "api_calls_monthly": 125000,
+    "featured": true
+  },
+  "GitCard": {
+    "github_stars": 78,
+    "github_forks": 34,
+    "live_users": 2400,
+    "monthly_visitors": 6800,
+    "uptime": 99.8,
+    "average_rating": 4.7,
+    "reviews_count": 62,
+    "build_time_days": 35,
+    "featured": true
+  },
+  "Simple Snake Game": {
+    "github_stars": 45,
+    "github_forks": 12,
+    "live_users": 500,
+    "monthly_visitors": 1200,
+    "uptime": 100,
+    "average_rating": 4.6,
+    "reviews_count": 28,
+    "build_time_days": 7,
+    "featured": false
+  },
+  "SubOrbit": {
+    "github_stars": 0,
+    "github_forks": 0,
+    "live_users": 450,
+    "monthly_visitors": 800,
+    "uptime": 99.85,
+    "average_rating": 4.5,
+    "reviews_count": 18,
+    "build_time_days": 28,
+    "featured": false
+  }
+}

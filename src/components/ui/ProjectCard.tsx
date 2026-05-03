@@ -1,7 +1,18 @@
 "use client";
 
-import { Github, Code2, BookOpen, ExternalLink } from "lucide-react";
+import { Github, Code2, BookOpen, ExternalLink, Star, Users, TrendingUp } from "lucide-react";
 import Image from "next/image";
+
+interface ProjectStats {
+  github_stars?: number;
+  github_forks?: number;
+  live_users?: number;
+  monthly_visitors?: number;
+  uptime?: number;
+  average_rating?: number;
+  reviews_count?: number;
+  build_time_days?: number;
+}
 
 interface ProjectCardProps {
   title: string;
@@ -11,6 +22,8 @@ interface ProjectCardProps {
   source?: string;
   tryit?: string;
   image?: string;
+  stats?: ProjectStats;
+  featured?: boolean;
 }
 
 export default function ProjectCard({
@@ -21,9 +34,16 @@ export default function ProjectCard({
   source,
   tryit,
   image,
+  stats,
+  featured,
 }: ProjectCardProps) {
   return (
     <div className="glass overflow-hidden flex flex-col group transition-all duration-300 hover:-translate-y-2 hover:border-primary/50">
+      {featured && (
+        <div className="bg-primary/20 border-b border-primary/30 px-4 py-2">
+          <span className="text-xs font-bold text-primary uppercase tracking-widest">⭐ Featured</span>
+        </div>
+      )}
       {/* Project Image / Placeholder */}
       <div className="relative h-48 w-full bg-slate-800 overflow-hidden">
         {image ? (
@@ -46,6 +66,35 @@ export default function ProjectCard({
         <p className="text-slate-400 text-sm line-clamp-3 mb-2">
           {description}
         </p>
+
+        {stats && (
+          <div className="grid grid-cols-2 gap-3 bg-slate-900/50 p-3 rounded-lg mb-4">
+            {stats.github_stars !== undefined && stats.github_stars > 0 && (
+              <div className="flex items-center gap-2 text-xs">
+                <Star size={14} className="text-yellow-400" fill="currentColor" />
+                <span className="text-slate-300">{stats.github_stars} stars</span>
+              </div>
+            )}
+            {stats.live_users !== undefined && stats.live_users > 0 && (
+              <div className="flex items-center gap-2 text-xs">
+                <Users size={14} className="text-primary" />
+                <span className="text-slate-300">{stats.live_users.toLocaleString()} users</span>
+              </div>
+            )}
+            {stats.average_rating !== undefined && stats.average_rating > 0 && (
+              <div className="flex items-center gap-2 text-xs">
+                <TrendingUp size={14} className="text-green-400" />
+                <span className="text-slate-300">{stats.average_rating}/5.0</span>
+              </div>
+            )}
+            {stats.uptime !== undefined && stats.uptime > 0 && (
+              <div className="flex items-center gap-2 text-xs">
+                <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                <span className="text-slate-300">{stats.uptime}% uptime</span>
+              </div>
+            )}
+          </div>
+        )}
 
         <div className="flex gap-2 flex-wrap mb-4">
           {tags.map((tag) => (

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "ClassicSnakeTutorial",
+    "description": "Educational Snake game implementation using vanilla JavaScript, HTML, and CSS. Perfect for learning 2D game development fundamentals.",
+    "url": "https://github.com/Valent-p/ClassicSnakeTutorial",
+    "stars": 45,
+    "forks": 12,
+    "language": "JavaScript",
+    "topics": ["game-dev", "educational", "tutorial"],
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Love-as-a-Service",
+    "description": "High-performance REST API for affirmations. A counter-culture project that went viral with 13,000+ impressions.",
+    "url": "https://github.com/Valent-p/love-as-a-service",
+    "stars": 234,
+    "forks": 89,
+    "language": "TypeScript",
+    "topics": ["api", "nextjs", "edge-runtime", "viral"],
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "GitCard",
+    "description": "Beautiful, shareable GitHub profile cards with fluid animations. Full-stack React + FastAPI application.",
+    "url": "https://github.com/Valent-p/gitcard",
+    "stars": 78,
+    "forks": 34,
+    "language": "Python",
+    "topics": ["github", "react", "fastapi", "portfolio"],
+    "featured": true
+  }
+]
