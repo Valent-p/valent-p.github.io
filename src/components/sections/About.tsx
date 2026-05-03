@@ -1,8 +1,6 @@
 export default function About() {
   const profile = {
-    bio: `Hello! I am Valentino Phiri, a passionate developer based in Malawi. I bridge the gap between High-Level Web Applications and Low-Level System Design. 
-          Founder of Veigatec and currently studying at NACIT. Whether it's optimizing memory 
-          management in C++ or deploying scalable APIs with Python, I write code that performs.`,
+    bio: `I'm a programmer and game developer from Malawi, fluent across the full stack—from kernel-level systems to dynamic web applications. My journey started with Python, but evolved into mastering compiler design, building game engines, and architecting elegant solutions to complex problems. Founder of Veigatec, currently shaping the future at NACIT. Whether it's designing custom programming languages, optimizing memory-critical systems, or deploying scalable APIs, I write code that performs at every layer.`,
     quote: "I command code, not armies.",
     skills: {
       languages: [

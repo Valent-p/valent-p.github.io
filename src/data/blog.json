@@ -6,7 +6,7 @@
     "content": "In this deep dive, I'll walk you through the journey of creating Love-as-a-Service, from ideation to going viral on LinkedIn...",
     "category": "Web Development",
     "tags": ["Next.js", "Edge Runtime", "API Design", "Viral Marketing"],
-    "date": "2026-04-15",
+    "date": "2026-03-01",
     "readTime": 8,
     "image": "/images/laas-v1.0-screenshot.png",
     "url": "https://www.linkedin.com/posts/valentino-phiri-74263237b_nextjs-vercel-webdevelopment-share-7441276665172750336-kopq",
@@ -19,10 +19,10 @@
     "content": "Privacy is a fundamental right. In this article, I share how I built WASM Convertify to keep user data completely private...",
     "category": "WebAssembly",
     "tags": ["WebAssembly", "Privacy", "FFmpeg.wasm", "React"],
-    "date": "2026-04-10",
+    "date": "2026-04-02",
     "readTime": 10,
     "image": "/images/wasm-convertify.png",
-    "url": "https://your-blog-url.com/wasm-convertify",
+    "url": "https://www.linkedin.com/posts/valentino-phiri-74263237b_webassembly-wasm-reactjs-share-7456287969948172288-l05d?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF3jPKIBXhL9i5pYIWTxED230Q9L7tCOgz0",
     "featured": true
   },
   {
@@ -32,7 +32,7 @@
     "content": "GitCard started as a simple idea: what if GitHub profiles could look even better? Here's how I made it happen...",
     "category": "Full-Stack Development",
     "tags": ["React", "FastAPI", "PostgreSQL", "Design"],
-    "date": "2026-03-28",
+    "date": "2026-02-01",
     "readTime": 12,
     "image": "/images/gitcard-logo.png",
     "url": "https://veigatec.rf.gd/project/gitcard",
@@ -45,10 +45,10 @@
     "content": "Game development teaches you a lot about optimization, state management, and user experience. Here's what I learned...",
     "category": "Game Development",
     "tags": ["Godot Engine", "Game Dev", "Performance"],
-    "date": "2026-03-15",
+    "date": "2026-03-01",
     "readTime": 9,
     "image": null,
-    "url": "https://your-blog-url.com/godot-lessons",
+    "url": "#",
     "featured": false
   }
 ]

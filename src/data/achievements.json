@@ -4,7 +4,7 @@
     "title": "Viral Developer",
     "description": "Love-as-a-Service reached 13,000+ impressions in the first week",
     "icon": "🚀",
-    "date": "2026-02-15",
+    "date": "2026-03-01",
     "category": "milestone"
   },
   {
@@ -28,7 +28,7 @@
     "title": "Game Developer",
     "description": "Multi-engine game development experience (Godot, Unity, GameMaker)",
     "icon": "🎮",
-    "date": "2025-01-01",
+    "date": "2026-01-01",
     "category": "skill"
   },
   {
@@ -36,7 +36,7 @@
     "title": "Performance Optimizer",
     "description": "Specialized in system design and low-level optimization",
     "icon": "🔥",
-    "date": "2026-01-15",
+    "date": "2026-01-01",
     "category": "skill"
   },
   {
@@ -44,7 +44,7 @@
     "title": "WebAssembly Pioneer",
     "description": "Built production applications leveraging WebAssembly for privacy and performance",
     "icon": "🌐",
-    "date": "2026-04-10",
+    "date": "2026-04-02",
     "category": "skill"
   }
 ]
