@@ -2,6 +2,14 @@ import ProjectCard from "../ui/ProjectCard";
 
 const projects = [
   {
+    title: "WASM Convertify",
+    description:
+      "A privacy-first, universal file converter powered by WebAssembly. Process documents, images, videos, and audio directly in your browser with zero server uploads. Built with React, TypeScript, and FFmpeg.wasm for high-performance, offline-capable conversions.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Zustand", "FFmpeg.wasm", "WebAssembly"],
+    tryit: "https://wasm-convertify.vercel.app",
+    image: "/images/wasm-convertify.png",
+  },
+  {
     title: "Love-as-a-Service (LaaS)",
     description:
       "A high-performance REST API for affirmations. Launched as a counter-culture project to 'no-as-a-service', it went viral on LinkedIn with 13,000+ impressions in its first week. Built with Next.js Edge Runtime for global scalability and DDoS resilience.",
