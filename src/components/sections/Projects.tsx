@@ -67,6 +67,15 @@ const projects = [
     image: "/images/suborbit-overview.png",
     featured: false,
   },
+  {
+    title: "Waste Audit & Management System",
+    description:
+      "A comprehensive waste management platform enabling waste managers, producers, regulators, and stakeholders to oversee and manage waste efficiently across Malawi. Built with a focus on user feedback integration and real-time progress monitoring. The system is continuously evolving with new features based on stakeholder requirements and is receiving excellent adoption and feedback.",
+    tags: ["React", "Full-Stack", "Database", "Cloud", "Enterprise"],
+    tryit: "https://waste.gwsmalawi.com",
+    image: "/images/was-screenshot.png",
+    featured: true,
+  },
 ];
 
 export default function Projects() {

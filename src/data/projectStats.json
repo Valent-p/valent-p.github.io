@@ -55,5 +55,14 @@
     "reviews_count": 18,
     "build_time_days": 28,
     "featured": false
+  },
+  "Waste Audit & Management System": {
+    "live_users": 320,
+    "monthly_visitors": 1800,
+    "uptime": 99.9,
+    "average_rating": 4.9,
+    "reviews_count": 42,
+    "build_time_days": 365,
+    "featured": true
   }
 }
