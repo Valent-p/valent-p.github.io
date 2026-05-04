@@ -15,6 +15,21 @@
   },
   {
     "id": 2,
+    "type": "experience",
+    "role": "Full-Stack Developer",
+    "company": "GWSMalawi",
+    "startDate": "2025",
+    "endDate": "Present",
+    "description": "Developing and maintaining the Waste Audit & Management System, a comprehensive platform for waste managers, producers, and regulators across Malawi. Continuously implementing features based on stakeholder feedback with strong user adoption and engagement.",
+    "highlights": [
+      "Built enterprise waste management platform",
+      "320+ active users with 99.9% uptime",
+      "4.9/5 user rating with 42+ reviews",
+      "Agile development with continuous feature implementation"
+    ]
+  },
+  {
+    "id": 3,
     "type": "education",
     "role": "Student",
     "company": "NACIT - Malawi",
@@ -28,7 +43,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "type": "experience",
     "role": "Freelance Developer",
     "company": "Self-employed",
